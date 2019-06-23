@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="postgres@localhost">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.15">
+    <root id="1">
+      <ServerVersion>11.3</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="postgres">
+      <ObjectId>13382</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <StateNumber>566</StateNumber>
+      <Owner>honoreddis</Owner>
+      <IntrospectionStateNumber>1078</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <role id="3" parent="1" name="honoreddis">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <Replication>1</Replication>
+      <BypassRls>1</BypassRls>
+    </role>
+    <role id="4" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="5" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="6" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="7" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="8" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="9" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="10" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="11" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="12" parent="1" name="postgres">
+      <ObjectId>16384</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <schema id="13" parent="2" name="information_schema">
+      <ObjectId>13086</ObjectId>
+      <StateNumber>365</StateNumber>
+      <Owner>honoreddis</Owner>
+    </schema>
+    <schema id="14" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <StateNumber>358</StateNumber>
+      <Owner>honoreddis</Owner>
+    </schema>
+    <schema id="15" parent="2" name="pg_temp_1">
+      <ObjectId>11804</ObjectId>
+      <StateNumber>120</StateNumber>
+      <Owner>honoreddis</Owner>
+    </schema>
+    <schema id="16" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+      <StateNumber>1</StateNumber>
+      <Owner>honoreddis</Owner>
+    </schema>
+    <schema id="17" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11805</ObjectId>
+      <StateNumber>120</StateNumber>
+      <Owner>honoreddis</Owner>
+    </schema>
+    <schema id="18" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <StateNumber>359</StateNumber>
+      <Owner>honoreddis</Owner>
+      <IntrospectionStateNumber>1079</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <access-method id="19" parent="2" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="20" parent="2" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="21" parent="2" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="22" parent="2" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="23" parent="2" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="24" parent="2" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <extension id="25" parent="2" name="plpgsql">
+      <ObjectId>13368</ObjectId>
+      <Comment>PL/pgSQL procedural language</Comment>
+      <StateNumber>518</StateNumber>
+      <Version>1.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <table id="26" parent="18" name="course">
+      <ObjectId>16628</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>1021</StateNumber>
+    </table>
+    <table id="27" parent="18" name="manager">
+      <ObjectId>16633</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>998</StateNumber>
+    </table>
+    <table id="28" parent="18" name="sc">
+      <ObjectId>16636</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>1021</StateNumber>
+    </table>
+    <table id="29" parent="18" name="student">
+      <ObjectId>16641</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>1022</StateNumber>
+    </table>
+    <table id="30" parent="18" name="tc">
+      <ObjectId>16646</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>1023</StateNumber>
+    </table>
+    <table id="31" parent="18" name="teacher">
+      <ObjectId>16651</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>1024</StateNumber>
+    </table>
+    <view id="32" parent="18" name="v_sc">
+      <ObjectId>16656</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>1020</StateNumber>
+      <SourceTextLength>156</SourceTextLength>
+    </view>
+    <column id="33" parent="26" name="c_num">
+      <Position>1</Position>
+      <Comment>课程号</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>994</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="34" parent="26" name="c_name">
+      <Position>2</Position>
+      <Comment>课程名</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <StateNumber>994</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="35" parent="26" name="c_credit">
+      <Position>3</Position>
+      <Comment>学分</Comment>
+      <DataType>integer|0s</DataType>
+      <StateNumber>994</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="36" parent="26" name="pk_course">
+      <ObjectId>16631</ObjectId>
+      <StateNumber>994</StateNumber>
+      <ColNames>c_num</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="37" parent="26" name="pk_course">
+      <ObjectId>16632</ObjectId>
+      <StateNumber>994</StateNumber>
+      <ColNames>c_num</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>pk_course</UnderlyingIndexName>
+    </key>
+    <column id="38" parent="27" name="count">
+      <Position>1</Position>
+      <Comment>账号</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <StateNumber>998</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="39" parent="27" name="password">
+      <Position>2</Position>
+      <Comment>密码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <StateNumber>998</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="40" parent="28" name="s_num">
+      <Position>1</Position>
+      <Comment>学号</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1001</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="41" parent="28" name="c_num">
+      <Position>2</Position>
+      <Comment>课程号</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1001</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="42" parent="28" name="score">
+      <Position>3</Position>
+      <Comment>成绩</Comment>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1001</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="43" parent="28" name="pk_sc">
+      <ObjectId>16639</ObjectId>
+      <StateNumber>1001</StateNumber>
+      <ColNames>s_num
+c_num</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="44" parent="28" name="pk_sc">
+      <ObjectId>16640</ObjectId>
+      <StateNumber>1001</StateNumber>
+      <ColNames>s_num
+c_num</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>pk_sc</UnderlyingIndexName>
+    </key>
+    <foreign-key id="45" parent="28" name="fk_sc_reference_student">
+      <ObjectId>16665</ObjectId>
+      <StateNumber>1022</StateNumber>
+      <ColNames>s_num</ColNames>
+      <RefTableId>16641</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>student</RefTableName>
+      <RefKeyName>pk_student</RefKeyName>
+      <RefColNames>s_num</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <foreign-key id="46" parent="28" name="fk_sc_reference_course">
+      <ObjectId>16660</ObjectId>
+      <StateNumber>1021</StateNumber>
+      <ColNames>c_num</ColNames>
+      <RefTableId>16628</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>course</RefTableName>
+      <RefKeyName>pk_course</RefKeyName>
+      <RefColNames>c_num</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="47" parent="29" name="s_num">
+      <Position>1</Position>
+      <Comment>学号</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1005</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="48" parent="29" name="s_sex">
+      <Position>2</Position>
+      <Comment>性别</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <StateNumber>1005</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="49" parent="29" name="s_age">
+      <Position>3</Position>
+      <Comment>年龄</Comment>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1005</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="50" parent="29" name="s_name">
+      <Position>4</Position>
+      <Comment>姓名</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <StateNumber>1005</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="51" parent="29" name="s_password">
+      <Position>5</Position>
+      <Comment>密码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <StateNumber>1005</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="52" parent="29" name="pk_student">
+      <ObjectId>16644</ObjectId>
+      <StateNumber>1005</StateNumber>
+      <ColNames>s_num</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="53" parent="29" name="pk_student">
+      <ObjectId>16645</ObjectId>
+      <StateNumber>1005</StateNumber>
+      <ColNames>s_num</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>pk_student</UnderlyingIndexName>
+    </key>
+    <column id="54" parent="30" name="t_num">
+      <Position>1</Position>
+      <Comment>工号</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1011</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="55" parent="30" name="c_num">
+      <Position>2</Position>
+      <Comment>课程号</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1011</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="56" parent="30" name="pk_tc">
+      <ObjectId>16649</ObjectId>
+      <StateNumber>1011</StateNumber>
+      <ColNames>t_num
+c_num</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="57" parent="30" name="pk_tc">
+      <ObjectId>16650</ObjectId>
+      <StateNumber>1011</StateNumber>
+      <ColNames>t_num
+c_num</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>pk_tc</UnderlyingIndexName>
+    </key>
+    <foreign-key id="58" parent="30" name="fk_tc_reference_teacher">
+      <ObjectId>16675</ObjectId>
+      <StateNumber>1024</StateNumber>
+      <ColNames>t_num</ColNames>
+      <RefTableId>16651</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>teacher</RefTableName>
+      <RefKeyName>pk_teacher</RefKeyName>
+      <RefColNames>t_num</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <foreign-key id="59" parent="30" name="fk_tc_reference_course">
+      <ObjectId>16670</ObjectId>
+      <StateNumber>1023</StateNumber>
+      <ColNames>c_num</ColNames>
+      <RefTableId>16628</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>course</RefTableName>
+      <RefKeyName>pk_course</RefKeyName>
+      <RefColNames>c_num</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="60" parent="31" name="t_num">
+      <Position>1</Position>
+      <Comment>工号</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1014</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="61" parent="31" name="t_name">
+      <Position>2</Position>
+      <Comment>姓名</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <StateNumber>1014</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="62" parent="31" name="t_title">
+      <Position>3</Position>
+      <Comment>职称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <StateNumber>1014</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="63" parent="31" name="t_salary">
+      <Position>4</Position>
+      <Comment>工资</Comment>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>1014</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="64" parent="31" name="t_password">
+      <Position>5</Position>
+      <Comment>密码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <StateNumber>1014</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="65" parent="31" name="pk_teacher">
+      <ObjectId>16654</ObjectId>
+      <StateNumber>1014</StateNumber>
+      <ColNames>t_num</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="66" parent="31" name="pk_teacher">
+      <ObjectId>16655</ObjectId>
+      <StateNumber>1014</StateNumber>
+      <ColNames>t_num</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>pk_teacher</UnderlyingIndexName>
+    </key>
+    <column id="67" parent="32" name="s_num">
+      <Position>1</Position>
+      <DataType>varchar(10)|0s</DataType>
+      <StateNumber>1020</StateNumber>
+    </column>
+    <column id="68" parent="32" name="c_num">
+      <Position>2</Position>
+      <DataType>varchar(10)|0s</DataType>
+      <StateNumber>1020</StateNumber>
+    </column>
+    <column id="69" parent="32" name="score">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1020</StateNumber>
+    </column>
+    <column id="70" parent="32" name="c_name">
+      <Position>4</Position>
+      <DataType>varchar(10)|0s</DataType>
+      <StateNumber>1020</StateNumber>
+    </column>
+    <column id="71" parent="32" name="c_credit">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1020</StateNumber>
+    </column>
+  </database-model>
+</dataSource>
